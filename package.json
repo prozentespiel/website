@@ -1,0 +1,19 @@
+{
+  "name": "prozentewebsite",
+  "version": "0.1.0",
+  "author": "Cedric Kim <hello@cedric.today> (https://cedric.today/)",
+  "description": "Das Website für (Proz)ente.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url" : "https://gitlab.com/prozente/website"
+  },
+  "devDependencies": {
+    "surge": "^0.21.3",
+    "lite-server": "^2.5.4"
+  },
+  "scripts": {
+    "start": "lite-server --baseDir=public",
+    "deploy": "surge public quak.cf && surge public www.quak.cf"
+  }
+}
